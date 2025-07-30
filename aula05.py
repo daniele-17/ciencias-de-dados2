@@ -12,3 +12,14 @@ print(f'Quartis: Q1={quartis[0]}, Q2={quartis[1]}, Q3={quartis[2]}')
 # Calcular decis
 decis = np.percentile(dados, [10, 20, 30, 40, 50, 60, 70, 80, 90])
 print(f'Decis: {decis}')
+
+# Calcular percentis
+percentis = np.percentile(dados, [10, 25, 50, 75, 90])
+print(f'Percentis: {percentis}')
+
+# Visualização por BoxPlot
+plt.boxplot (dados, vert=False)
+plt. title('Boxplot das Notas')
+plt.xlabel ('Notas')
+plt. show()
+plt.savefig('chart5.png')
